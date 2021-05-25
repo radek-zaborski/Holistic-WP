@@ -1,0 +1,371 @@
+@import "./bootstrap-grid";
+
+$red: #b63232;
+
+h1 {
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+h2{
+    font-size: 1rem;
+    font-weight: bolder;
+}
+
+body {
+    background: #d3dddf;
+    background: linear-gradient(0deg,#fff 29%,#d3dddf 70%);
+    background-repeat: no-repeat;
+    height: auto  ;
+    font-size: 16px;
+ overflow-y: scroll;
+ font-weight: 500;
+    @extend .container;
+}
+
+/*Main Container */
+
+.main-container {
+    min-width: 90%;
+    max-width: 1300px;
+    
+    height: auto;
+    margin: 0 ;
+    background: #84c7d0;
+    background: linear-gradient(0deg,#fff 29%,#a4bfe2 70%);
+    border-radius: 40px;
+    box-shadow: 10px 10px 30px 2px;
+   
+
+    @extend .mt-5, .align-content-start;
+}
+
+// HEADER //
+
+.header{
+    height: 100%;
+    @extend .col-12;
+}
+
+
+//  LOGO-HEADER //
+
+.header__container-logo{
+    width: 100%;
+    @extend .d-flex, .flex-wrap, .justify-content-between;
+}
+
+.header__first-image{
+    width: 100%;
+
+    @extend .col-12, .col-lg-5,.mx-auto, .mx-lg-0,.mb-2, .mt-5, .my-lg-5, .mr-lg-5,.d-flex, .justify-content-center;
+}
+
+.header__second-image{
+    width: 100%;
+
+    @extend  .col-lg-5 ,.col-8, .mx-auto, .mx-lg-0, .my-0, .my-lg-5, .justify-content-center;
+    
+}
+
+.header__first-pictrue{
+    width: 100%;
+
+    @extend .mx-auto, .mx-lg-0;
+}
+
+.header__second-pictrue{
+    width: 100%;
+    @extend .mt-0, .mt-lg-5, .mx-auto;
+}
+
+// HEADER MENU//
+.header__container-link{
+    margin-top: 1.3rem;
+    justify-content: center;
+    align-items: baseline;
+    
+    background: #b3ddae;
+    border-radius: 30px;
+   @extend .d-flex, .flex-wrap, .col-12;
+}
+
+.header__container-link--undecorate{
+    list-style: none;
+}
+
+.header__link-menu{
+    margin: 0.5em;
+    font-size: 1.3em;
+    white-space: nowrap;
+}
+.header__link-menu--undecorate a{
+    padding: 0.5rem 0.9rem;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    transition-property: background-color;
+    transition-duration: .6s;
+    font-weight: bolder;
+
+    &:hover{
+        transition-property: background-color;
+        transition-duration: .6s;
+        background: #86c57f;
+        border-radius: 30px;
+    }
+}
+
+.header__title{
+    @extend .col-12, .mt-5;
+    
+}
+.header__title--red{
+    color: $red;
+}
+
+
+// HOME-PAGE //
+.home-page{
+
+    text-align: center;
+    @extend .col-10, .mt-5, .mx-auto, .d-flex, .flex-wrap;
+}
+
+.home-page__picture{
+    height: 85%;
+    border-radius: 30px;
+
+    @extend .col-10, .col-lg-6, .mx-auto;
+}
+
+.home-page__article{
+    font-size: 1.1rem;
+    font-weight: 500;
+
+    @extend .mt-5;
+}
+
+// NATUROTERAPHY //
+
+.naturoteraphy{
+    @extend .col-10, .mt-5, .mx-auto, .d-flex, .flex-wrap;
+}
+.naturoteraphy__video {  
+    width: 100%;
+    height: 300px;
+    position: relative;
+    @extend .col-10, .mx-auto;
+}
+.naturoteraphy__player{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.naturoteraphy__title{
+    font-size: 1.4rem;
+    @extend .mt-5, .mx-auto;
+}
+
+.naturoteraphy__first-paragraph {
+    @extend .col-12;
+}
+
+.naturoteraphy__information, .naturoteraphy__warning, .naturoteraphy__notify{
+
+    @extend .col-12, .mt-5;
+}
+
+
+.naturoteraphy__title-program{
+    @extend .justify-content-center, .mx-auto, .mt-5;
+}
+
+.naturoteraphy__day-schedule{
+
+    @extend .mt-1;
+}
+.naturoteraphy__add-notes{
+    @extend .mt-4;
+}
+
+// TRAINING BLOOD //
+
+.training-blood{
+    @extend .col-10, .mx-auto;
+}
+.training-blood__title{
+    font-size: 1.4rem;
+    @extend .mt-5;
+}
+.training-blood__container-menu{
+    text-align: center;
+}
+.training-blood__container-menu--undecorate{
+    list-style: none;
+}
+.training-blood__link-menu{
+    @extend .mt-3;
+}
+.training-blood__link-menu a{
+@extend .py-2;
+}
+.training-blood__link-menu--undecorate a{
+    text-decoration: none;
+    // padding: 8px 20px;
+    color: #1f069c;
+    
+    font-weight: bolder;
+    transition-property: background-color;
+    transition-duration: .6s;
+    border-radius: 30px;
+    @extend .col-12;
+}
+.training-blood__link-menu--undecorate a:hover{
+    transition-property: background-color;
+    transition-duration: .6s;
+    background: #b3ddae;
+    border-radius: 30px;
+    @extend .col-12;
+}
+
+// 1 LEVEL BLOOD //
+
+.level-1-blood{
+    @extend .col-10, .d-flex, .flex-wrap, .mx-auto;
+}
+.level-1-blood__container-main-image{
+   
+    @extend .col-10,.col-12, .mt-5;
+}
+
+.level-1-blood__main-board-image{
+    width: 100%;
+    border-radius: 30px;
+}
+
+.level-1-blood__warning{
+    @extend .col-10,.mt-5, .mx-auto;
+}
+
+.level-1-blood__images-group-container{
+
+    @extend .d-flex, .flex-wrap, .my-5, .col-12, .justify-content-between;
+}
+.level-1-blood__image{
+    border-radius: 50px;
+    @extend .col-12, .col-lg-4, .my-3, .my-lg-0;
+}
+
+// LEVEL-2-BLOOD //
+.level-2-blood{
+    @extend .col-10, .d-flex, .flex-wrap, .mx-auto;
+}
+.level-2-blood__container-main-image{
+   
+    @extend .col-12, .mt-5;
+}
+
+.level-2-blood__main-board-image{
+    width: 100%;
+    border-radius: 30px;
+}
+
+.level-2-blood__information {
+    @extend .col-12, .my-5;
+}
+
+.level-2-blood__photo-course-container {
+    @extend .d-flex, .flex-wrap, .col-12, .justify-content-between, .mx-0, .px-0;
+}
+
+.level-2-blood__single-image-course{
+    height: auto;
+    width: 100%;
+    
+    @extend .col-lg-4,.col-12, .my-3,  .d-flex, .justify-content-center;
+
+     img {
+         height: 100%;
+         width: 100%;
+         object-fit: fill;
+         border-radius: 30px;
+
+     }
+}
+
+.level-2-blood__first-info {
+    @extend .my-5;
+}
+
+.level-2-blood__container-image-dark-field{
+    @extend .col-12, .d-flex, .justify-content-center;
+}
+
+.level-2-blood__microscope-dark-field{
+    border-radius: 30px;
+    @extend .d-flex, .justify-content-center;
+}
+.level-2-blood__article-info {
+    @extend .my-5;
+}
+
+.level-2-blood__leukocytes-group{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.level-2-blood__granulocytes{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    @extend .mb-5;
+}
+.level-2-blood__simple-granulocyte{
+    @extend .col-10, .my-3, .d-flex, .justify-content-center, .flex-wrap;
+}
+.level-2-blood__image-granulocyte img {
+    width: 100%;
+    border-radius: 30px;
+}
+
+.level-2-blood__agranulocytes{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    @extend .mb-5;
+}
+.level-2-blood__simple-agranulocyte{
+    @extend .col-10, .my-3, .d-flex, .justify-content-center, .flex-wrap;
+}
+.level-2-blood__image-agranulocyte img {
+    width: 100%;
+    border-radius: 30px;
+}
+// FOOTER //
+
+.footer{
+    border-top: 6px solid #b63232;
+
+    @extend .my-5, .py-5;
+}
+
+.footer__title{
+    font-size: 1rem;
+
+    @extend .col-12, .pl-4;
+}
+.footer__contact{
+    font-size: 1.3rem;
+    @extend .col-12;
+}
+
+.footer__copyright{
+    font-size: 0.7rem;
+
+    @extend .mt-5, .pt-2;
+}
+
+
